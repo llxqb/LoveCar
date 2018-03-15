@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/com_grey_bg"
+    tools:context="com.bhxx.lovecar.activity.GJSDetailActivity">
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height">
+
+        <ImageView
+            android:id="@+id/gjs_detail_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/com_left_right"
+            android:src="@mipmap/nav_return" />
+
+        <TextView
+            android:id="@+id/gjs_detail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="估价师详情"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_36px" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/title_layout"
+        android:background="@color/com_line_bg" />
+
+    <TextView
+        android:id="@+id/gjsDetail_lookcar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:layout_marginTop="@dimen/com_top_buttom"
+        android:background="@color/app_grey"
+        android:gravity="center"
+        android:text="预约看车"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:textSize="@dimen/sp_32px" />
+
+    <ScrollView
+        android:layout_below="@id/view"
+        android:layout_above="@id/gjsDetail_lookcar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/gjsDetail_background_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_300px">
+
+                    <ImageView
+                        android:id="@+id/gjsDetail_avatar_background"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.bhxx.lovecar.views.CircleImageView2
+                            xmlns:myxmlns="http://schemas.android.com/apk/res/com.bhxx.lovecar"
+                            android:id="@+id/gjsDetail_avatar"
+                            android:layout_width="@dimen/height_100px"
+                            android:layout_height="@dimen/height_100px"
+                            android:src="@mipmap/default_avatar"
+                            android:layout_marginBottom="10dp"
+                            android:contentDescription="@null"
+                            android:scaleType="centerCrop"
+                            myxmlns:border_width="2dp"
+                            myxmlns:border_color="@color/white"
+                            />
+
+                        <TextView
+                            android:id="@+id/gjsDetail_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="秦祥林"
+                            android:textColor="@color/white" />
+
+                        <RatingBar
+                            android:id="@+id/gjsDetail_level"
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:numStars="5"
+                            android:progressTint="@color/yellow"
+                            android:rating="3.5" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/gjsDetail_profession"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/height_30px"
+                    android:layout_marginRight="@dimen/com_left_right"
+                    android:layout_marginTop="@dimen/com_top_buttom"
+                    android:text="专业评估SUV车型"
+                    android:textColor="@color/text_3333"
+                    android:textSize="@dimen/sp_32px" />
+
+                <TextView
+                    android:id="@+id/gjsDetail_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/height_30px"
+                    android:layout_marginTop="@dimen/com_top_buttom"
+                    android:textColor="@color/app_grey"
+                    android:textSize="@dimen/sp_36px" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/height_56px"
+                    android:layout_marginLeft="@dimen/height_30px"
+                    android:layout_marginRight="@dimen/height_30px"
+                    android:layout_marginTop="@dimen/com_top_buttom"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/gjsDetail_assessNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_9999"
+                        android:textSize="@dimen/sp_26px" />
+
+                    <TextView
+                        android:id="@+id/gjsDetail_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/height_30px"
+                        android:gravity="right"
+                        android:text="上海"
+                        android:textColor="@color/text_cccccc"
+                        android:textSize="@dimen/sp_26px" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- 服务介绍 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_40px"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_120px"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/com_left_right">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@mipmap/icon_02" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/com_left_right"
+                        android:text="服务介绍"
+                        android:textColor="@color/text_3333"
+                        android:textSize="@dimen/sp_28px" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/com_line_bg" />
+
+                <TextView
+                    android:id="@+id/gjsDetail_describe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/height_40px"
+                    android:text="检查手制动部分，未发现犯卡，回位不良的情况，检查手制动部分，未发现犯卡，回位不良的情况，检查手制动部分，未发现犯卡，回位不良的情况，检查手制动部分，未发现犯卡，回位不良的情况"
+                    android:textColor="@color/text_6666"
+                    android:textSize="@dimen/sp_30px" />
+            </LinearLayout>
+
+
+            <!-- 相关评价 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_40px"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_120px"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/com_left_right">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@mipmap/icon_02" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/com_left_right"
+                        android:text="相关评价"
+                        android:textColor="@color/text_3333"
+                        android:textSize="@dimen/sp_28px" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/com_line_bg" />
+
+                <com.bhxx.lovecar.views.MyListView
+                    android:id="@+id/gjsDetail_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"></com.bhxx.lovecar.views.MyListView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

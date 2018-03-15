@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.bhxx.lovecar.views.PullToRefreshLayout
+        android:id="@+id/pullLoveCar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/refresh_head" />
+
+        <com.bhxx.lovecar.views.PullableListView
+            android:id="@+id/lvLoveCar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:scrollbars="none" />
+
+        <include layout="@layout/load_more" />
+    </com.bhxx.lovecar.views.PullToRefreshLayout>
+
+</LinearLayout>

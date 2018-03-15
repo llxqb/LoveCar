@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:background="@color/com_title_bg">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:onClick="onBackClick"
+            android:padding="@dimen/com_left_right"
+            android:src="@mipmap/nav_return" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/mine_account"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_34px" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange_normal"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/com_left_right">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mine_balance"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_36px" />
+
+        <TextView
+            android:id="@+id/tvAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/com_left_right"
+            android:text="249.00元"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_46px" />
+
+        <Button
+            android:id="@+id/btnWithdraw"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_70px"
+            android:layout_marginTop="@dimen/com_left_right"
+            android:background="@drawable/selector_btn_withdraw_cash"
+            android:text="@string/mine_withdraw_cash"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_36px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/rgAccount"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_100px"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbtnIn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/mine_withdraw_in"
+                android:textColor="@color/selector_txtcolor_withdraw" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/height_80px"
+                android:background="@color/com_line_bg" />
+
+            <RadioButton
+                android:id="@+id/rbtnOut"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/mine_withdraw_out"
+                android:textColor="@color/selector_txtcolor_withdraw" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/height_80px"
+                android:background="@color/com_line_bg" />
+
+            <RadioButton
+                android:id="@+id/rbtnTX"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/mine_withdraw_tx"
+                android:textColor="@color/selector_txtcolor_withdraw" />
+        </RadioGroup>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

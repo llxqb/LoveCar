@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/com_grey_bg"
+    android:orientation="vertical"
+    tools:context="com.bhxx.lovecar.activity.MomentsDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/com_left_right"
+            android:src="@mipmap/nav_return" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="圈子详情"
+            android:textColor="@color/text_3333"
+            android:textSize="@dimen/sp_36px" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/com_line_bg"
+        />
+
+    <RelativeLayout
+        android:id="@+id/moments_rel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_240px"
+        android:background="@color/white"
+        android:layout_gravity="center_vertical"
+        android:padding="@dimen/com_left_right"
+        >
+
+        <ImageView
+            android:id="@+id/circleImg"
+            android:layout_width="@dimen/height_180px"
+            android:layout_height="@dimen/height_180px"
+            android:layout_alignParentLeft="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/default_avatar" />
+
+        <TextView
+            android:id="@+id/circle_add"
+            android:layout_width="@dimen/height_120px"
+            android:layout_height="@dimen/height_56px"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/round_moment_btn"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="添加"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/circle_add"
+            android:layout_toRightOf="@id/circleImg"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/com_left_right"
+            android:paddingRight="@dimen/com_left_right">
+
+            <TextView
+                android:id="@+id/circleName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@color/text_3333"
+                android:textSize="@dimen/sp_30px" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/com_left_right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/circle_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="圈友"
+                    android:textColor="@color/text_6666"
+                    android:textSize="@dimen/sp_28px" />
+
+                <TextView
+                    android:id="@+id/circle_post_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/height_30px"
+                    android:textColor="@color/text_6666"
+                    android:textSize="@dimen/sp_28px" />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/circle_brief"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/com_left_right"
+                android:singleLine="true"
+                android:text="详情"
+                android:textColor="@color/text_6666"
+                android:textSize="@dimen/sp_28px" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/com_top_buttom"
+        android:background="@color/com_line_bg"
+        />
+
+
+    <com.bhxx.lovecar.views.PullToRefreshLayout
+        android:id="@+id/pull"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/refresh_head" />
+
+
+        <com.bhxx.lovecar.views.PullableListView
+            android:id="@+id/pullablelistview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:scrollbars="none">
+
+        </com.bhxx.lovecar.views.PullableListView>
+
+        <include layout="@layout/load_more" />
+    </com.bhxx.lovecar.views.PullToRefreshLayout>
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hotcar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/com_grey_bg"
+        android:padding="@dimen/height_16px"
+        android:text="热门品牌" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/com_line_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_100px"
+        android:layout_marginTop="@dimen/com_left_right"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/icon_aodi"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/icon_aodi" />
+
+        <ImageView
+            android:id="@+id/icon_baoma"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/icon_baoma" />
+
+        <ImageView
+            android:id="@+id/icon_biek"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/icon_biek" />
+
+        <ImageView
+            android:id="@+id/icon_byadi"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/icon_byadi" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_100px"
+        android:layout_marginTop="@dimen/com_left_right"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/icon_dazhong"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/icon_dazhong" />
+
+        <ImageView
+            android:id="@+id/icon_fute"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/icon_fute" />
+
+        <ImageView
+            android:id="@+id/icon_qirui"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/icon_qirui" />
+
+        <ImageView
+            android:id="@+id/icon_xuefl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/icon_xuefl" />
+    </LinearLayout>
+</LinearLayout>

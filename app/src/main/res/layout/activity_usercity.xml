@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:background="@color/com_title_bg">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/com_left_right"
+            android:src="@mipmap/nav_return" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_34px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_currentcity"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:text="自动定位："
+                android:textColor="@color/orange_normal"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_currentcity"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/selector_bg_listitem1"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:hint="定位中……"
+                android:textColor="@color/orange_normal"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ll_currentcity">
+
+            <com.bhxx.lovecar.views.PinnedHeaderListView
+                android:id="@+id/pinnedListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </com.bhxx.lovecar.views.PinnedHeaderListView>
+
+            <TextView
+                android:id="@+id/dialog"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="@drawable/shape_round_gray"
+                android:gravity="center"
+                android:textColor="#ffffffff"
+                android:textSize="30sp"
+                android:visibility="invisible" />
+
+            <com.bhxx.lovecar.views.FastLocationBarView
+                android:id="@+id/sidebar"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center" />
+        </FrameLayout>
+    </RelativeLayout>
+</LinearLayout>

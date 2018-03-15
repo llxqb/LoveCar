@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:background="@color/com_title_bg">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:onClick="onBackClick"
+            android:padding="@dimen/com_left_right"
+            android:src="@mipmap/nav_return" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/mine_estimator_apply"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_34px" />
+    </RelativeLayout>
+
+    <!--姓名-->
+    <LinearLayout
+        android:id="@+id/llName"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:background="@drawable/selector_bg_listitem1"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/padding_15"
+        android:paddingRight="@dimen/padding_15">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="@string/mine_detail_name"
+            android:textColor="@color/listitem1_test"
+            android:textSize="@dimen/menu_list_icon_text" />
+
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/com_left_right"
+            android:layout_marginRight="@dimen/com_left_right"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:gravity="right|center_vertical"
+            android:hint="@string/mine_hint_rname"
+            android:textColor="@color/text_6666" />
+
+        <include
+            android:id="@+id/arrow"
+            layout="@layout/layout_list_item_common_arrow" />
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/layout_line_marginleft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!--学历-->
+    <LinearLayout
+        android:id="@+id/llEducation"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:background="@drawable/selector_bg_listitem1"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/padding_15"
+        android:paddingRight="@dimen/padding_15">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="@string/mine_detail_education"
+            android:textColor="@color/listitem1_test"
+            android:textSize="@dimen/menu_list_icon_text" />
+
+        <TextView
+            android:id="@+id/tvEducation"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/com_left_right"
+            android:layout_marginRight="@dimen/com_left_right"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:gravity="right|center_vertical"
+            android:hint="@string/mine_hint_education"
+            android:textColor="@color/text_6666" />
+
+        <include
+            android:id="@+id/arrow"
+            layout="@layout/layout_list_item_common_arrow" />
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/layout_line_marginleft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!--估价师等级-->
+    <LinearLayout
+        android:id="@+id/llLevel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:background="@drawable/selector_bg_listitem1"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/padding_15"
+        android:paddingRight="@dimen/padding_15">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="@string/mine_estimator_level"
+            android:textColor="@color/listitem1_test"
+            android:textSize="@dimen/menu_list_icon_text" />
+
+        <TextView
+            android:id="@+id/tvLevel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/com_left_right"
+            android:layout_marginRight="@dimen/com_left_right"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:gravity="right|center_vertical"
+            android:hint="@string/mine_hint_gjs_level"
+            android:textColor="@color/text_6666" />
+
+        <include
+            android:id="@+id/arrow"
+            layout="@layout/layout_list_item_common_arrow" />
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/layout_line_marginleft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!--经验年限-->
+    <LinearLayout
+        android:id="@+id/llExperience"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:background="@drawable/selector_bg_listitem1"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/padding_15"
+        android:paddingRight="@dimen/padding_15">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="@string/mine_estimator_experience"
+            android:textColor="@color/listitem1_test"
+            android:textSize="@dimen/menu_list_icon_text" />
+
+        <TextView
+            android:id="@+id/etExperience"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/com_left_right"
+            android:layout_marginRight="@dimen/com_left_right"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:gravity="right|center_vertical"
+            android:hint="@string/mine_hint_gjs_experience"
+            android:textColor="@color/text_6666" />
+
+        <include
+            android:id="@+id/arrow"
+            layout="@layout/layout_list_item_common_arrow" />
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/layout_line_marginleft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/com_left_right">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mine_gjs_upload_zs"
+            android:textColor="@color/text_3333"
+            android:textSize="@dimen/menu_list_icon_text" />
+
+        <ImageView
+            android:id="@+id/ivCertificate"
+            android:layout_width="@dimen/height_200px"
+            android:layout_height="@dimen/height_200px"
+            android:layout_marginLeft="@dimen/height_12px"
+            android:layout_marginTop="@dimen/com_left_right"
+            android:src="@mipmap/pic_zhaoxiangjishangc" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="1"
+        android:padding="@dimen/com_left_right"
+        android:textColor="@color/orange_normal"
+        android:textSize="@dimen/sp_22px" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_80px"
+        android:layout_margin="@dimen/com_left_right"
+        android:background="@drawable/selector_color_orange"
+        android:onClick="startSubmitGJSInfoTask"
+        android:text="@string/operation_submit"
+        android:textColor="@color/white" />
+</LinearLayout>

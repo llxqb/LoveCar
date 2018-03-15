@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/search_round_btn"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/publish_car_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/com_left_right"
+            android:src="@mipmap/bt_clos"
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/icon_ts" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/height_22px"
+        android:text="您确认将该车发布至平台"
+        android:textColor="@color/text_little_black"
+        android:textSize="@dimen/sp_34px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_80px"
+        android:layout_marginTop="@dimen/height_56px"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/publish_car_cancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/height_80px"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/white"
+            android:background="@color/yellow"
+            android:textSize="@dimen/sp_34px" />
+        <TextView
+            android:id="@+id/publish_car_sure"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/height_80px"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:background="@color/app_grey"
+            android:textSize="@dimen/sp_34px" />
+    </LinearLayout>
+
+</LinearLayout>

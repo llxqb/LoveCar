@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_70px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/com_left_right"
+            android:layout_marginRight="@dimen/com_left_right"
+            android:layout_marginTop="@dimen/com_top_buttom"
+            android:background="@drawable/search_round_btn">
+
+            <ImageView
+                android:id="@+id/search_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/height_28px"
+                android:src="@mipmap/nav_search" />
+
+            <TextView
+                android:id="@+id/search_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@id/search_image"
+                android:gravity="left|center_vertical"
+                android:background="@null"
+                android:hint="搜索你感兴趣的圈子"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:textColor="@color/text_cccccc"
+                android:textSize="@dimen/sp_30px" />
+        </RelativeLayout>
+
+        <com.bhxx.lovecar.views.MyListView
+            android:id="@+id/my_moments_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/com_top_buttom"
+            android:listSelector="@drawable/listview_onclick_item_btn"
+            android:divider="@null"></com.bhxx.lovecar.views.MyListView>
+
+        <LinearLayout
+            android:id="@+id/search_circle_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/com_top_buttom">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_01" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/com_left_right"
+                android:text="搜索你感兴趣的圈子"
+                android:textColor="@color/text_6666" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/com_line_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/com_grey_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/com_top_buttom">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_02" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/com_left_right"
+                android:text="圈子推荐"
+                android:textColor="@color/text_3333" />
+
+            <TextView
+                android:id="@+id/my_moments_changelist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="换一批"
+                android:textColor="@color/yellow" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/com_line_bg" />
+        </LinearLayout>
+
+        <com.bhxx.lovecar.views.MyListView
+            android:id="@+id/my_moments_tuijianlistview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/com_top_buttom"
+            android:divider="@null"></com.bhxx.lovecar.views.MyListView>
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:userItem1="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/com_grey_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:background="@color/com_title_bg">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:onClick="onBackClick"
+            android:padding="@dimen/com_left_right"
+            android:src="@mipmap/nav_return" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/mine_detail"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_34px" />
+    </RelativeLayout>
+    <!--用户头像-->
+    <RelativeLayout
+        android:id="@+id/rlHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_bg_listitem1"
+        android:clickable="true"
+        android:padding="@dimen/padding_15">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/mine_detail_upload_head"
+            android:textColor="@color/listitem1_test"
+            android:textSize="@dimen/menu_list_icon_text" />
+
+        <com.bhxx.lovecar.views.CircleImageView
+            android:id="@+id/civHead"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/head_06" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divide_line_height"
+        android:layout_marginLeft="@dimen/com_left_right"
+        android:layout_marginRight="@dimen/com_left_right"
+        android:background="@color/com_line_bg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <!--用户姓名-->
+            <com.bhxx.lovecar.views.UserItem1
+                android:id="@+id/uiUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                userItem1:userArrow="true"
+                userItem1:userTitle="@string/mine_detail_name" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divide_line_height"
+                android:background="@color/com_line_bg" />
+
+            <!--性别-->
+            <com.bhxx.lovecar.views.UserItem1
+                android:id="@+id/uiUserSex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                userItem1:userArrow="true"
+                userItem1:userTitle="@string/mine_detail_sex" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divide_line_height"
+                android:background="@color/com_line_bg" />
+
+            <!--出生年月-->
+            <com.bhxx.lovecar.views.UserItem1
+                android:id="@+id/uiBirthday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                userItem1:userArrow="true"
+                userItem1:userTitle="@string/mine_detail_birthday" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divide_line_height"
+                android:background="@color/com_line_bg" />
+
+            <!--所在城市-->
+            <com.bhxx.lovecar.views.UserItem1
+                android:id="@+id/uiCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                userItem1:userArrow="true"
+                userItem1:userTitle="@string/mine_detail_city" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divide_line_height"
+                android:background="@color/com_line_bg" />
+
+            <!--手机号-->
+            <com.bhxx.lovecar.views.UserItem1
+                android:id="@+id/uiMobilephone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:visibility="invisible"
+                userItem1:userArrow="true"
+                userItem1:userTitle="@string/mine_detail_mobilephone" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/selector_color_orange"
+            android:onClick="startModifyTask"
+            android:text="@string/operation_ok"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+</LinearLayout>

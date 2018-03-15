@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/search_round_btn"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/apply_success_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/com_left_right"
+            android:src="@mipmap/bt_clos"
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/icon_ts" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/height_22px"
+        android:text="添加成功，平台会第一时间对您的\n                  爱车进行评估"
+        android:textColor="@color/text_little_black"
+        android:textSize="@dimen/sp_34px" />
+
+    <TextView
+        android:id="@+id/apply_success_ok"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_80px"
+        android:layout_marginBottom="@dimen/height_20px"
+        android:layout_marginTop="@dimen/height_56px"
+        android:gravity="center"
+        android:text="我知道了"
+        android:textColor="@color/app_grey"
+        android:textSize="@dimen/sp_34px" />
+</LinearLayout>

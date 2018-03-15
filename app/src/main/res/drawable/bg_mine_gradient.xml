@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--type linear radial与android:gradientRadius有关-->
+    <gradient
+        android:angle="45"
+        android:startColor="@color/mine_bg_startcolor"
+        android:endColor="@color/mine_bg_endcolor"
+        android:type="linear" />
+</shape>

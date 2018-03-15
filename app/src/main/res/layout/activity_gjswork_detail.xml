@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bhxx.lovecar.activity.GJSWorkDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height">
+
+        <ImageView
+            android:id="@+id/gjs_workdetail_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/com_left_right"
+            android:src="@mipmap/nav_return" />
+
+        <TextView
+            android:id="@+id/gjs_workdetail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_36px" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/com_line_bg" />
+
+
+    <RelativeLayout
+        android:id="@+id/gjsworkDetail_background_img"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_360px">
+
+        <ImageView
+            android:id="@+id/gjsworkDetail_avatar_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.9"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.bhxx.lovecar.views.CircleImageView2 xmlns:myxmlns="http://schemas.android.com/apk/res/com.bhxx.lovecar"
+                android:id="@+id/gjsworkDetail_avatar"
+                android:layout_width="@dimen/height_100px"
+                android:layout_height="@dimen/height_100px"
+                android:layout_marginBottom="10dp"
+                android:contentDescription="@null"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/default_avatar"
+                myxmlns:border_color="@color/white"
+                myxmlns:border_width="2dp" />
+
+
+            <RatingBar
+                android:id="@+id/gjsworkDetail_level"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:progressTint="@color/yellow"
+                android:rating="3.5" />
+
+            <TextView
+                android:id="@+id/gjsworkDetail_assessNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_10px"
+                android:text="已评估10次"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_28px" />
+
+            <TextView
+                android:id="@+id/gjsworkDetail_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_10px"
+                android:text="上海"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_32px" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/com_grey_bg">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/height_60px"
+            android:layout_marginRight="@dimen/height_60px"
+            android:theme="@style/Theme.AppCompat"
+            app:tabIndicatorColor="@color/app_grey"
+            app:tabSelectedTextColor="@color/app_grey"
+            app:tabTextColor="@color/text_3333"></android.support.design.widget.TabLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/com_line_bg" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+</LinearLayout>

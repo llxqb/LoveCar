@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:background="@color/com_title_bg">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:onClick="onBackClick"
+            android:padding="@dimen/com_left_right"
+            android:src="@mipmap/nav_return" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/mine_lovecar"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_34px" />
+
+        <TextView
+            android:id="@+id/tvTradeHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onTradeHistory"
+            android:paddingRight="@dimen/com_left_right"
+            android:text="@string/mine_trade_record"
+            android:textSize="@dimen/sp_32px"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/com_line_bg" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tlLovecar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/com_left_right"
+        android:layout_marginRight="@dimen/com_left_right"
+        android:theme="@style/Theme.AppCompat"
+        app:tabIndicatorColor="@color/app_grey"
+        app:tabSelectedTextColor="@color/app_grey"
+        app:tabTextColor="@color/text_3333" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpLovecar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

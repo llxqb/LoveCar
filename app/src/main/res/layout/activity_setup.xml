@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:onClick="onBackClick"
+            android:padding="@dimen/com_left_right"
+            android:src="@mipmap/nav_return" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/mine_setup"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_34px" />
+    </RelativeLayout>
+    <!--个人信息-->
+    <LinearLayout
+        android:id="@+id/llInfo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:background="@drawable/selector_bg_listitem1"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/padding_15"
+        android:paddingRight="@dimen/padding_15">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="@string/mine_detail"
+            android:textColor="@color/listitem1_test"
+            android:textSize="@dimen/menu_list_icon_text" />
+
+        <include
+            android:id="@+id/arrow"
+            layout="@layout/layout_list_item_common_arrow" />
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/layout_line_marginleft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!--修改密码-->
+    <LinearLayout
+        android:id="@+id/llModifyPassword"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:background="@drawable/selector_bg_listitem1"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/padding_15"
+        android:paddingRight="@dimen/padding_15">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="@string/mine_password"
+            android:textColor="@color/listitem1_test"
+            android:textSize="@dimen/menu_list_icon_text" />
+
+        <include
+            android:id="@+id/arrow"
+            layout="@layout/layout_list_item_common_arrow" />
+
+    </LinearLayout>
+    <!--意见反馈-->
+    <LinearLayout
+        android:id="@+id/llOpinion"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@drawable/selector_bg_listitem1"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/padding_15"
+        android:paddingRight="@dimen/padding_15">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="@string/mine_opinion"
+            android:textColor="@color/listitem1_test"
+            android:textSize="@dimen/menu_list_icon_text" />
+
+        <include
+            android:id="@+id/arrow"
+            layout="@layout/layout_list_item_common_arrow" />
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/layout_line_marginleft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!--用户协议-->
+    <LinearLayout
+        android:id="@+id/llProtocol"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:background="@drawable/selector_bg_listitem1"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/padding_15"
+        android:paddingRight="@dimen/padding_15">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="@string/mine_protocol"
+            android:textColor="@color/listitem1_test"
+            android:textSize="@dimen/menu_list_icon_text" />
+
+        <include
+            android:id="@+id/arrow"
+            layout="@layout/layout_list_item_common_arrow" />
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/layout_line_marginleft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!--版本更新-->
+    <LinearLayout
+        android:id="@+id/llVersion"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:background="@drawable/selector_bg_listitem1"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/padding_15"
+        android:paddingRight="@dimen/padding_15">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="@string/mine_version"
+            android:textColor="@color/listitem1_test"
+            android:textSize="@dimen/menu_list_icon_text" />
+
+        <include
+            android:id="@+id/arrow"
+            layout="@layout/layout_list_item_common_arrow" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_90px"
+        android:layout_marginTop="@dimen/com_left_right"
+        android:background="@color/white"
+        android:onClick="onLogoutAppClick"
+        android:text="@string/mine_logout"
+        android:textColor="@color/orange_normal" />
+
+</LinearLayout>

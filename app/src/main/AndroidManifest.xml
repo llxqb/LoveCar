@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.bhxx.lovecar">
+
+    <uses-sdk tools:overrideLibrary="com.umeng.socialize.evernote,com.umeng.socialize.pinterest" />
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 震动权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <!-- 使用照相机权限 -->
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <!-- 自动聚焦权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:name=".application.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.LoginActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LauncherActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.FindPwdActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.ZiXunActivity" />
+        <activity android:name=".activity.RegisterActivity" />
+        <activity android:name=".activity.RegisterConfirmActivity" />
+        <activity android:name=".activity.SearchActivity" />
+        <activity android:name=".activity.GJSActivity" />
+        <activity android:name=".activity.HomeAssessActivity" />
+        <activity android:name=".activity.photo.PhotoActivity" />
+        <activity android:name=".activity.photo.PhotoAlbumActivity" />
+        <activity android:name=".activity.photo.ViewPagerActivity" />
+        <activity android:name=".activity.photo.ViewPagerDeleteActivity" />
+        <activity android:name=".activity.AssessListActivity" />
+        <activity android:name=".activity.CityListActivity" />
+        <activity
+            android:name=".activity.WriteCarinfoActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 主页 -->
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 用户个人信息 -->
+        <activity
+            android:name=".activity.UserDetailActivity"
+            android:screenOrientation="portrait" />
+        <!-- 公共少量信息输入 -->
+        <activity
+            android:name=".activity.SmallTextActivity"
+            android:screenOrientation="portrait" />
+        <!-- 城市列表定位 -->
+        <activity
+            android:name=".activity.UserCityActivity"
+            android:screenOrientation="portrait" />
+        <!-- 我的 爱车 -->
+        <activity
+            android:name=".activity.LoveCarActivity"
+            android:screenOrientation="portrait" />
+        <!-- 我的 账号中心 -->
+        <activity
+            android:name=".activity.AccountActivity"
+            android:screenOrientation="portrait" />
+        <!-- 我的 设置 -->
+        <activity
+            android:name=".activity.SetupActivity"
+            android:screenOrientation="portrait" />
+        <!-- 我的 关注 -->
+        <activity
+            android:name=".activity.FocusActivity"
+            android:screenOrientation="portrait" />
+        <!-- 我的 关注详情 -->
+        <activity
+            android:name=".activity.FocusDetailActivity"
+            android:screenOrientation="portrait" />
+        <!-- 我的 收藏 -->
+        <activity
+            android:name=".activity.CollectionCarActivity"
+            android:screenOrientation="portrait" />
+        <!-- 我的 评论 -->
+        <activity
+            android:name=".activity.MarkActivity"
+            android:screenOrientation="portrait" />
+        <!-- 我的 交易记录 -->
+        <activity
+            android:name=".activity.TradeHistoryActivity"
+            android:screenOrientation="portrait" />
+        <!-- 我的 消息中心 -->
+        <activity
+            android:name=".activity.MessageCenterActivity"
+            android:screenOrientation="portrait" />
+        <!-- 我的 修改密码 -->
+        <activity
+            android:name=".activity.ModifyPasswordActivity"
+            android:screenOrientation="portrait" />
+        <!-- 我的 关于我们 -->
+        <activity
+            android:name=".activity.AboutActivity"
+            android:screenOrientation="portrait" />
+        <!-- 我的 用户意见 -->
+        <activity
+            android:name=".activity.UserOpinionActivity"
+            android:screenOrientation="portrait" />
+        <!-- 我的 用户协议 -->
+        <activity
+            android:name=".activity.UserProtocolActivity"
+            android:screenOrientation="portrait" />
+        <!-- 我的 估价师个人中心 -->
+        <activity
+            android:name=".activity.GJSInfoActivity"
+            android:screenOrientation="portrait" />
+        <!-- 我的 申请成为估价师 -->
+        <activity
+            android:name=".activity.GJSApplyActivity"
+            android:screenOrientation="portrait" />
+        <!-- 我的 估价师个人中心-发布服务 -->
+        <activity
+            android:name=".activity.GjsReleaseServicesActivity"
+            android:screenOrientation="portrait" />
+        <!-- 车友圈 交友 添加好友 -->
+        <activity
+            android:name=".activity.AddFriendListActivity"
+            android:screenOrientation="portrait" />
+        <!-- 车友圈 交友 添加好友 筛选 -->
+        <activity
+            android:name=".activity.AddFriendFilterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- tencent -->
+        <activity
+            android:name="com.umeng.qq.tencent.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1105876014" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.umeng.qq.tencent.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <receiver
+            android:name=".receiver.MyJpushBroadcast"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" />
+                <!-- Optional 用户接受Rich Push Javascript 回调函数的intent -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+                <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.bhxx.lovecar" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 百度定位 -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="rAm0ff6poQluUuy6FgQWOLOVllNP1EyN" />
+
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden"></activity>
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden"></activity>
+        <activity
+            android:name=".activity.CarTypeActivity"
+            android:launchMode="singleTop" />
+        <!-- umeng分享 umengAppKey，replace to yours -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="586b3fc25312dd5123001e33" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Umeng" />
+
+        <activity
+            android:name=".activity.CarDetailActivity"
+            android:launchMode="singleTop" />
+        <activity android:name=".activity.SearchMomentsActivity" />
+        <activity android:name=".activity.MomentsDetailActivity" />
+        <activity android:name=".activity.ImageDisplayActivity" />
+        <activity android:name=".activity.MyMomentsDetailActivity" />
+        <activity
+            android:name=".activity.WritePostActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activity.PostDetailActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".activity.CarTypeThridActivity" />
+        <activity
+            android:name=".activity.ZiXunDetailActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.ConversationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.bhxx.lovecar"
+                    android:pathPrefix="/conversation/"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+
+        <!-- 注册融云广播 -->
+        <receiver
+            android:name=".rongcloud.MyRongCloudReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="io.rong.push.intent.MESSAGE_ARRIVED" />
+                <action android:name="io.rong.push.intent.MI_MESSAGE_ARRIVED" />
+                <action android:name="io.rong.push.intent.MESSAGE_CLICKED" />
+                <action android:name="io.rong.push.intent.MI_MESSAGE_CLICKED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".activity.ZiXunRightItemActivity" />
+        <activity android:name=".activity.GJSDetailActivity" />
+        <activity android:name=".activity.GJSWorkDetailActivity" />
+        <activity android:name=".activity.LookCarActivity" />
+        <activity android:name=".activity.GJSServerCarActivity"></activity>
+    </application>
+
+</manifest>

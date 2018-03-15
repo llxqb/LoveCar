@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="transparent">#00000000</color>
+    <color name="app_grey">#ff5833</color>
+    <color name="com_title_bg">#EFEBEC</color>
+    <color name="com_line_bg">#E1E1E1</color>
+    <!--Activity bg -->
+    <color name="com_grey_bg">#F2F3F6</color>
+
+    <color name="app_blue">#48B4FF</color>
+    <color name="text_little_black">#999999</color>
+    <color name="text_3333">#333333</color>
+    <color name="text_6666">#666666</color>
+    <color name="text_9999">#999999</color>
+    <color name="text_cccccc">#CCCCCC</color>
+    <color name="text_7786">#7786A7</color>
+    <color name="f8f8">#F8F8F8</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="yellow">#F9D034</color>
+    <color name="gray">#EEEEEE</color>
+    <color name="divide_line">#ffdddddd</color>
+
+    <color name="orange_normal">#F75531</color>
+    <color name="orange_enable_false">#CCCCCC</color>
+    <color name="orange_pressed">#F26060</color>
+    <color name="withdraw_cash_normal">#FFFF7953</color>
+    <color name="withdraw_cash_pressed">#55FF7953</color>
+
+
+    <color name="listitem1_normal">#ffffffff</color>
+    <color name="listitem1_pressed">#ffF8F8F8</color>
+    <color name="listitem1_test">#222222</color>
+
+    <color name="cancel_normal">#FFF5B613</color>
+    <color name="cancel_pressed">#aaF5B613</color>
+    <!--我的-->
+    <color name="mine_bg_startcolor">#ff7133</color>
+    <color name="mine_bg_endcolor">#ffaa57</color>
+</resources>

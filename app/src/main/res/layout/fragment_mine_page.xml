@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ListItem1="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/com_grey_bg"
+    android:orientation="vertical"
+    tools:context="com.bhxx.lovecar.activity.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:background="@color/com_title_bg">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/com_left_right"
+            android:src="@mipmap/nav_return"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/mine"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_34px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_mine_gradient"
+        android:padding="@dimen/com_left_right">
+
+        <TextView
+            android:id="@+id/tvNickName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/civUserHead"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_30px" />
+
+        <com.bhxx.lovecar.views.CircleImageView
+            android:id="@+id/civUserHead"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/default_avatar" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/com_grey_bg"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--爱车-->
+            <com.bhxx.lovecar.views.ListItem1
+                android:id="@+id/liLoveCar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                ListItem1:itemArrow="true"
+                ListItem1:itemCenter="false"
+                ListItem1:itemIcon="@mipmap/icon_wdac"
+                ListItem1:itemTitle="@string/mine_lovecar" />
+
+            <include
+                layout="@layout/layout_line_marginleft"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!--估价师认证/估价师个人中心-->
+            <com.bhxx.lovecar.views.ListItem1
+                android:id="@+id/liEstimator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                ListItem1:itemArrow="true"
+                ListItem1:itemCenter="false"
+                ListItem1:itemIcon="@mipmap/icon_wdgjss"
+                ListItem1:itemTitle="@string/mine_estimator_authentication" />
+
+            <include
+                layout="@layout/layout_line_marginleft"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!--账户中心-->
+            <com.bhxx.lovecar.views.ListItem1
+                android:id="@+id/liAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                ListItem1:itemArrow="true"
+                ListItem1:itemCenter="false"
+                ListItem1:itemIcon="@mipmap/icon_wdzhzx"
+                ListItem1:itemTitle="@string/mine_account" />
+
+            <include
+                layout="@layout/layout_line_marginleft"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!--消息-->
+            <com.bhxx.lovecar.views.ListItem1
+                android:id="@+id/lvMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                ListItem1:itemArrow="true"
+                ListItem1:itemCenter="false"
+                ListItem1:itemIcon="@mipmap/icon_wdxiaoxi"
+                ListItem1:itemTitle="@string/mine_news" />
+
+            <!--关注-->
+            <com.bhxx.lovecar.views.ListItem1
+                android:id="@+id/liFocus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                ListItem1:itemArrow="true"
+                ListItem1:itemCenter="false"
+                ListItem1:itemIcon="@mipmap/icon_wdguanz"
+                ListItem1:itemTitle="@string/mine_focused" />
+
+            <include
+                layout="@layout/layout_line_marginleft"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!--收藏-->
+            <com.bhxx.lovecar.views.ListItem1
+                android:id="@+id/liCollect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                ListItem1:itemArrow="true"
+                ListItem1:itemCenter="false"
+                ListItem1:itemIcon="@mipmap/icon_wdshouc"
+                ListItem1:itemTitle="@string/mine_collected" />
+
+            <include
+                layout="@layout/layout_line_marginleft"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!--设置-->
+            <com.bhxx.lovecar.views.ListItem1
+                android:id="@+id/liSetup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                ListItem1:itemArrow="true"
+                ListItem1:itemCenter="false"
+                ListItem1:itemIcon="@mipmap/icon_wdshez"
+                ListItem1:itemTitle="@string/mine_setup" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

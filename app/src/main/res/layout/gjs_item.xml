@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gjs_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/com_left_right"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/gjs_round_btn"
+        >
+        <RelativeLayout
+            android:id="@+id/gjs_background_img"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_300px"
+            >
+
+            <ImageView
+                android:id="@+id/gjs_avatar_background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:alpha="0.9"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+                <com.bhxx.lovecar.views.CircleImageView2
+                    xmlns:myxmlns="http://schemas.android.com/apk/res/com.bhxx.lovecar"
+                    android:id="@+id/gjs_avatar"
+                    android:layout_width="@dimen/height_100px"
+                    android:layout_height="@dimen/height_100px"
+                    android:src="@mipmap/default_avatar"
+                    android:layout_marginBottom="10dp"
+                    android:contentDescription="@null"
+                    android:scaleType="centerCrop"
+                    myxmlns:border_width="2dp"
+                    myxmlns:border_color="@color/white"
+                    />
+
+                <TextView
+                    android:id="@+id/gjs_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="秦祥林"
+                    android:textColor="@color/white"
+                    />
+
+                <RatingBar
+                    android:id="@+id/gjs_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:rating="3.5"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:progressTint="@color/yellow"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/com_top_buttom"
+            >
+            <TextView
+                android:id="@+id/gjs_assess_cartype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="车型"
+                android:textColor="@color/text_3333"
+                android:textSize="@dimen/sp_32px"
+                android:layout_alignParentLeft="true"
+                />
+            <TextView
+                android:id="@+id/gjs_assess_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/app_grey"
+                android:textSize="@dimen/sp_32px"
+                />
+            <TextView
+                android:id="@+id/gjs_assess_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已估价0次"
+                android:textColor="@color/text_9999"
+                android:textSize="@dimen/sp_26px"
+                android:layout_marginTop="@dimen/height_30px"
+                android:layout_below="@id/gjs_assess_cartype"
+                />
+            <TextView
+                android:id="@+id/gjs_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上海"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/height_30px"
+                android:textColor="@color/text_9999"
+                android:textSize="@dimen/sp_26px"
+                android:layout_below="@id/gjs_assess_price"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

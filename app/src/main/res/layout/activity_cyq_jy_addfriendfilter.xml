@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:userItem1="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height">
+
+        <TextView
+            android:id="@+id/tvCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:onClick="onBackClick"
+            android:padding="@dimen/com_left_right"
+            android:text="@string/operation_cancel"
+            android:textColor="@color/text_3333"
+            android:textSize="@dimen/sp_32px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/car_cyq_addfriend_title"
+            android:textColor="@color/text_3333"
+            android:textSize="@dimen/sp_36px" />
+
+        <TextView
+            android:id="@+id/tvOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:text="@string/operation_finished"
+            android:textColor="@color/text_3333"
+            android:textSize="@dimen/sp_32px" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/com_line_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_100px"
+        android:layout_marginBottom="@dimen/com_left_right"
+        android:layout_marginTop="@dimen/com_left_right"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/llBoy"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_color_white"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/selector_btn_sex_boy" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_5"
+                android:text="@string/mine_d_sex_male"
+                android:textColor="@color/selector_txtcolor_sex" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llGirl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_color_white"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/selector_btn_sex_girl" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_5"
+                android:text="@string/mine_d_sex_female"
+                android:textColor="@color/selector_txtcolor_sex" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llNormal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_color_white"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/selector_btn_sex_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_5"
+                android:text="@string/mine_d_sex_normal"
+                android:textColor="@color/selector_txtcolor_sex" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--年龄-->
+    <com.bhxx.lovecar.views.UserItem1
+        android:id="@+id/uiAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        userItem1:userArrow="true"
+        userItem1:userTitle="@string/mine_detail_age" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divide_line_height"
+        android:background="@color/com_line_bg" />
+    <!--所在城市-->
+    <com.bhxx.lovecar.views.UserItem1
+        android:id="@+id/uiCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        userItem1:userArrow="true"
+        userItem1:userTitle="@string/mine_detail_city" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divide_line_height"
+        android:background="@color/com_line_bg" />
+    <!--距离-->
+    <com.bhxx.lovecar.views.UserItem1
+        android:id="@+id/uiDistance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        userItem1:userArrow="true"
+        userItem1:userTitle="@string/car_cyq_af_filter_d" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divide_line_height"
+        android:background="@color/com_line_bg" />
+    <!--身份-->
+    <com.bhxx.lovecar.views.UserItem1
+        android:id="@+id/uiType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        userItem1:userArrow="true"
+        userItem1:userTitle="@string/car_cyq_af_filter_type" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divide_line_height"
+        android:background="@color/com_line_bg" />
+</LinearLayout>

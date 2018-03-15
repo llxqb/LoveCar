@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/height_114px"
+        android:src="@mipmap/icon_logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/height_60px"
+        android:layout_marginRight="@dimen/height_60px"
+        android:layout_marginTop="@dimen/height_30px"
+        android:background="@drawable/shape_border_bg"
+        android:gravity="center_vertical"
+        android:padding="@dimen/padding_15">
+
+        <ImageView
+            android:id="@+id/login_user_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_zhanghao" />
+
+        <EditText
+            android:id="@+id/etUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/height_15px"
+            android:background="@null"
+            android:hint="@string/mine_hint_username"
+            android:inputType="number"
+            android:maxLength="13"
+            android:singleLine="true"
+            android:textColor="@color/text_6666"
+            android:textColorHint="@color/text_6666"
+            android:textSize="@dimen/sp_28px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/height_60px"
+        android:layout_marginRight="@dimen/height_60px"
+        android:layout_marginTop="@dimen/height_30px"
+        android:background="@drawable/shape_border_bg"
+        android:gravity="center_vertical"
+        android:padding="@dimen/padding_15">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_mima" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/height_15px"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/mine_hint_password"
+            android:inputType="textPassword"
+            android:digits="@string/op_nozw"
+            android:maxLength="18"
+            android:lines="1"
+            android:textColor="@color/text_6666"
+            android:textColorHint="@color/text_6666"
+            android:textSize="@dimen/sp_28px" />
+
+        <TextView
+            android:id="@+id/tvPasswordVisible"
+            android:visibility="gone"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/icon_close" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:layout_marginLeft="@dimen/height_60px"
+        android:layout_marginRight="@dimen/height_60px"
+        android:gravity="center_vertical">
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mine_read" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/mine_user_pro"
+            android:textColor="@color/app_grey" />
+
+        <TextView
+            android:id="@+id/tvForgetPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:text="@string/mine_forget_pass"
+            android:textColor="@color/text_6666"
+            android:textSize="@dimen/sp_28px" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:visibility="gone"
+        android:gravity="center"
+        android:text="@string/mine_login_third"
+        android:textColor="@color/text_6666"
+        android:textSize="@dimen/sp_28px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/com_left_right"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvWechat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_bg_listitem1"
+            android:clickable="true"
+            android:drawableTop="@mipmap/pic_weixin"
+            android:text="@string/mine_wechat_friend"
+            android:textColor="@color/text_6666"
+            android:textSize="@dimen/sp_24px" />
+
+        <TextView
+            android:id="@+id/tvQQ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/com_title_height"
+            android:background="@drawable/selector_bg_listitem1"
+            android:clickable="true"
+            android:drawableTop="@mipmap/pic_qq"
+            android:text="@string/mine_qq_friend"
+            android:textColor="@color/text_6666"
+            android:textSize="@dimen/sp_24px" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_90px"
+        android:layout_marginLeft="@dimen/height_60px"
+        android:layout_marginRight="@dimen/height_60px"
+        android:layout_marginTop="@dimen/com_left_right"
+        android:background="@drawable/selector_color_orange"
+        android:enabled="false"
+        android:text="@string/operation_login"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_34px" />
+
+
+    <TextView
+        android:id="@+id/tvGoRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/com_left_right"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/mine_go_register"
+        android:textColor="@color/app_grey"
+        android:textSize="@dimen/sp_28px" />
+
+</LinearLayout>

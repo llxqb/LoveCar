@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/com_left_right">
+
+        <com.bhxx.lovecar.views.CircleImageView
+            android:id="@+id/civHead"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@mipmap/head_04" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/com_left_right"
+            android:layout_toRightOf="@+id/civHead"
+            android:text="莉莉"
+            android:textColor="@color/text_3333"
+            android:textSize="@dimen/sp_34px" />
+
+        <ImageView
+            android:id="@+id/ivRZ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="@dimen/padding_5"
+            android:layout_toRightOf="@+id/tvName"
+            android:src="@mipmap/icon_rz_yellow" />
+
+        <ImageView
+            android:id="@+id/ivSex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/civHead"
+            android:layout_marginLeft="@dimen/com_left_right"
+            android:layout_toRightOf="@+id/civHead"
+            android:src="@mipmap/icon_man_blue" />
+
+        <TextView
+            android:id="@+id/tvAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/civHead"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/ivSex"
+            android:text="24"
+            android:textSize="@dimen/sp_26px" />
+
+        <ImageView
+            android:id="@+id/ivCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/civHead"
+            android:layout_marginLeft="@dimen/com_left_right"
+            android:layout_toRightOf="@+id/tvAge"
+            android:src="@mipmap/icon_dress" />
+
+        <TextView
+            android:id="@+id/tvDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/civHead"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/ivCity"
+            android:text="上海/1公里"
+            android:textSize="@dimen/sp_26px" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_corner_add"
+            android:text="@string/operation_add"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+</LinearLayout>

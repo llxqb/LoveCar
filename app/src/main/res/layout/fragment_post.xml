@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/rgTZ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/com_left_right">
+
+        <RadioButton
+            android:id="@+id/rbMineTZ"
+            android:layout_width="@dimen/height_240px"
+            android:layout_height="@dimen/height_60px"
+            android:background="@drawable/selector_minetz"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingBottom="@dimen/padding_5"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/padding_5"
+            android:text="@string/car_circle_minetz"
+            android:textColor="@color/selector_txtcolor_minetz" />
+
+        <RadioButton
+            android:id="@+id/rbMineHF"
+            android:layout_width="@dimen/height_240px"
+            android:layout_height="@dimen/height_60px"
+            android:background="@drawable/selector_minehf"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingBottom="@dimen/padding_5"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/padding_5"
+            android:text="@string/car_circle_minehf"
+            android:textColor="@color/selector_txtcolor_minetz" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/com_line_bg" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpTZ"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>

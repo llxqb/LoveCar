@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_bg_listitem1"
+        android:gravity="center_vertical"
+        android:padding="@dimen/padding_10">
+
+        <com.bhxx.lovecar.views.CircleImageView
+            android:id="@+id/civHead"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@mipmap/head_04" />
+
+        <TextView
+            android:id="@+id/textItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/com_left_right"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_6666"
+            android:textSize="@dimen/sp_28px" />
+    </LinearLayout>
+</LinearLayout>

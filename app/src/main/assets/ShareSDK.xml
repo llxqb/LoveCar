@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DevInfor>
+    <!-- 修改成你在sharesdk后台注册的应用的appkey"-->
+    <ShareSDK AppKey="1145dc2336aab" />
+
+    <!-- ShareByAppClient标识是否使用微博客户端分享，默认是false -->
+    <SinaWeibo AppKey="2750628641" AppSecret="b071536ed55f32f69037c258349f97ee" Enable="true" Id="1"
+        RedirectUrl="https://api.weibo.com/oauth2/default.html" ShareByAppClient="true"
+        SortId="1" />
+
+    <TencentWeibo AppKey="801347541" AppSecret="8d0fdc04c68a646f7b97ae8d2cda01e0" Enable="true" Id="2"
+        RedirectUri="http://www.eachbaby.com" SortId="2" />
+
+    <QZone AppId="100444318" AppKey="719e11e52d0d350fcac5d52208afc4b9" Enable="true" Id="3"
+        ShareByAppClient="true" SortId="3" />
+    <QQ AppId="100444318" AppKey="719e11e52d0d350fcac5d52208afc4b9" Enable="true" Id="4"
+        SortId="4" />
+
+    <Wechat AppId="wxde9b85e850a55c7d" AppSecret="29a169e4ee24cf2b76f3b0b8d910a157" BypassApproval="false"
+        Enable="true" Id="5" SortId="5" />
+
+    <WechatMoments AppId="wxde9b85e850a55c7d" AppSecret="29a169e4ee24cf2b76f3b0b8d910a157" BypassApproval="false"
+        Enable="true" Id="6" SortId="6" />
+</DevInfor>

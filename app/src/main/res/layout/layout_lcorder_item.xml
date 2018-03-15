@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/com_left_right">
+
+        <LinearLayout
+            android:id="@+id/home_car_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_270px"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:id="@+id/ivCarImg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.4"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/default_bg_02"
+                />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/com_left_right"
+                android:layout_weight="2">
+
+                <TextView
+                    android:id="@+id/tvCarName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="4444"
+                    android:textColor="@color/text_3333"
+                    android:textSize="@dimen/sp_34px" />
+
+
+                <TextView
+                    android:id="@+id/tvCarOther"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="----11111"
+                    android:textColor="@color/text_6666"
+                    android:textSize="@dimen/sp_28px" />
+
+                <TextView
+                    android:id="@+id/tvCarState"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:text="已支付"
+                    android:textColor="@color/text_6666"
+                    android:textSize="@dimen/sp_28px" />
+
+                <TextView
+                    android:id="@+id/tvCarPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@+id/tvCarState"
+                    android:text="￥11.20万"
+                    android:textColor="@color/orange_normal"
+                    android:textSize="@dimen/sp_28px" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/ivDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_shanc" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/com_line_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical">
+            <!--估价师-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/com_left_right"
+                android:paddingTop="@dimen/padding_5">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_weight="1"
+                    android:text="估价师"
+                    android:textColor="@color/text_3333"
+                    android:textSize="@dimen/sp_28px" />
+
+                <TextView
+                    android:id="@+id/tvGjsName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_weight="3"
+                    android:text="张三"
+                    android:textColor="@color/text_6666"
+                    android:textSize="@dimen/sp_28px" />
+            </LinearLayout>
+            <!--估值范围-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/com_left_right"
+                android:paddingTop="@dimen/padding_5">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_weight="1"
+                    android:text="估值范围"
+                    android:textColor="@color/text_3333"
+                    android:textSize="@dimen/sp_28px" />
+
+                <TextView
+                    android:id="@+id/tvGZFW"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_weight="3"
+                    android:text="8.00万-8.79万"
+                    android:textColor="@color/text_6666"
+                    android:textSize="@dimen/sp_28px" />
+            </LinearLayout>
+            <!--估价师-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/com_left_right"
+                android:paddingTop="@dimen/padding_5">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_weight="1"
+                    android:text="建议售价"
+                    android:textColor="@color/text_3333"
+                    android:textSize="@dimen/sp_28px" />
+
+                <TextView
+                    android:id="@+id/tvJYSJ"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_weight="3"
+                    android:text="8.50万"
+                    android:textColor="@color/text_6666"
+                    android:textSize="@dimen/sp_28px" />
+            </LinearLayout>
+            <!--评估报告-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/com_left_right"
+                android:paddingTop="@dimen/padding_5">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_weight="1"
+                    android:text="评估报告"
+                    android:textColor="@color/text_3333"
+                    android:textSize="@dimen/sp_28px" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3">
+
+                    <ImageView
+                        android:id="@+id/ivReport"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/icon_gjba" />
+
+                    <Button
+                        android:id="@+id/btnPJ"
+                        android:layout_width="@dimen/height_80px"
+                        android:layout_height="@dimen/height_60px"
+                        android:layout_marginRight="@dimen/padding_5"
+                        android:clickable="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/selector_color_orange"
+                        android:text="@string/mine_order_pj" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/com_line_bg" />
+    </LinearLayout>
+</LinearLayout>

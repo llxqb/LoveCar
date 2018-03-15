@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_bg_listitem1"
+        android:gravity="center_vertical"
+        android:padding="@dimen/padding_10">
+
+        <com.bhxx.lovecar.views.CircleImageView
+            android:id="@+id/civHead"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@mipmap/default_avatar"
+            />
+
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/civHead"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:layout_toRightOf="@+id/civHead"
+            android:lines="1"
+            android:text="222"
+            android:textColor="@color/text_3333"
+            android:textSize="@dimen/sp_34px" />
+
+        <TextView
+            android:id="@+id/tvRightFocus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:drawableLeft="@mipmap/icon_follow"
+            android:drawablePadding="@dimen/padding_5"
+            android:text="@string/mine_focused" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/civHead"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:layout_toRightOf="@+id/civHead"
+            android:text="11个小时之前"
+            android:textColor="@color/text_6666"
+            android:textSize="@dimen/sp_20px" />
+
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/civHead"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:layout_toRightOf="@+id/tvTime"
+            android:text="上海"
+            android:textColor="@color/text_6666"
+            android:textSize="@dimen/sp_20px" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_10"
+        android:text="111111111" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_300px"
+        android:scaleType="centerCrop"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="@dimen/padding_10">
+
+        <TextView
+            android:id="@+id/tvComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@mipmap/icon_comment"
+            android:drawablePadding="@dimen/padding_5"
+            android:text="22" />
+
+        <TextView
+            android:id="@+id/tvFocus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/com_left_right"
+            android:layout_toLeftOf="@+id/tvComment"
+            android:drawableLeft="@mipmap/icon_fabulous"
+            android:drawablePadding="@dimen/padding_5"
+            android:text="11" />
+
+        <TextView
+            android:id="@+id/tvCollection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/com_left_right"
+            android:layout_toLeftOf="@+id/tvFocus"
+            android:drawableLeft="@mipmap/icon_collection"
+            android:drawablePadding="@dimen/padding_5"
+            android:text="11" />
+    </RelativeLayout>
+</LinearLayout>

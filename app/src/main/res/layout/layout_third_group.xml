@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_round_corner_white"
+            android:orientation="vertical"
+            android:padding="@dimen/com_left_right">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/height_50px">
+
+                <Button
+                    android:id="@+id/btnWechat"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_bg_listitem1"
+                    android:drawableTop="@mipmap/pic_weixin"
+                    android:tag="1"
+                    android:text="@string/mine_wechat_friend"
+                    android:textColor="@color/text_6666"
+                    android:textSize="@dimen/sp_24px" />
+
+                <Button
+                    android:id="@+id/btnQQ"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_bg_listitem1"
+                    android:drawableTop="@mipmap/pic_qq"
+                    android:tag="1"
+                    android:text="@string/mine_qq_friend"
+                    android:textColor="@color/text_6666"
+                    android:textSize="@dimen/sp_24px" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/com_line_bg" />
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_80px"
+                android:layout_marginBottom="@dimen/height_10px"
+                android:layout_marginTop="@dimen/height_10px"
+                android:background="@drawable/selector_color_orange"
+                android:tag="0"
+                android:text="@string/operation_cancel"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_32px" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

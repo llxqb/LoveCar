@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/com_grey_bg"
+    android:orientation="vertical"
+    tools:context="com.bhxx.lovecar.activity.AssessListActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height">
+
+        <ImageView
+            android:id="@+id/assess_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/com_left_right"
+            android:src="@mipmap/nav_return" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="爱车估价"
+            android:textColor="@color/text_3333"
+            android:textSize="@dimen/sp_36px" />
+
+        <ImageView
+            android:id="@+id/assess_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/com_left_right"
+            android:src="@mipmap/add" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/com_line_bg" />
+
+
+    <com.bhxx.lovecar.views.PullToRefreshLayout
+        android:id="@+id/my_pull"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/refresh_head" />
+
+        <com.bhxx.lovecar.views.PullableListView
+            android:id="@+id/my_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:scrollbars="none">
+
+        </com.bhxx.lovecar.views.PullableListView>
+
+        <include layout="@layout/load_more" />
+    </com.bhxx.lovecar.views.PullToRefreshLayout>
+
+
+    <LinearLayout
+        android:id="@+id/no_add_car_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/pic_03" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_70px"
+                android:text="您还没有车辆信息哦"
+                android:textColor="@color/text_9999"
+                android:textSize="@dimen/sp_36px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/addcar_tv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/com_title_height"
+                android:layout_marginLeft="@dimen/com_left_right"
+                android:layout_marginRight="@dimen/com_left_right"
+                android:layout_marginTop="@dimen/height_70px"
+                android:background="@color/app_grey"
+                android:gravity="center"
+                android:text="添加车辆"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_36px" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
